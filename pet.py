@@ -8,13 +8,13 @@ if user == "Menu":
   feed=input("What would you like to order? \n").lower()
   if feed == "cappuccino":
     print("What a great choice! that would cost you $5.00")
-  if feed == "latte":
+  elif feed == "latte":
     print("What a great choice! that would cost you $4.00")
-  if feed == "americano":
+  elif feed == "americano":
     print("What a great choice! that would cost you $9.00")
-  if feed == "espresso":
+  elif feed == "espresso":
     print("What a great choice! that would cost you $11.00")
-  if feed == "mocha":
+  elif feed == "mocha":
     print("What a great choice! that would cost you $20.00")
 
   payment=input("How would you like to pay? \n").lower()
@@ -80,24 +80,24 @@ if user == "String Manipulator":
     print(word.upper())
    
 
-  if user == "2":
+  elif user == "2":
     word=input("Enter a word:")
     print(word.lower())
 
-  if user == "3":
+  elif user == "3":
      word=input("Enter a word:")
      print(word[::-1])
 
-  if user == "4":
+  elif user == "4":
      word=input("Enter a word:")
      print(len(word))
 
-  if user == "5":
+  elif user == "5":
      word=input("Enter a word:")
      letter=input("Enter a letter:")
      print(word.find(letter))
 
-  if user == "6":
+  elif user == "6":
      word=input("Enter a word:")
      letter=input("Enter the first letter of the word:")
      letter2=input("Enter the letter you want to replace it with:")
@@ -160,9 +160,9 @@ if user == "Treasure Island Game":
          colour=input("Which colour do you choose?")
          if colour == "red":
             print("It's a room full of fire. Game Over.")
-         if colour == "yellow":
+         elif colour == "yellow":
             print("You found the treasure! You Win!")
-         if colour == "blue":
+         elif colour == "blue":
             print("You enter a room of beasts. Game Over.")
 
       elif action == "swim":
